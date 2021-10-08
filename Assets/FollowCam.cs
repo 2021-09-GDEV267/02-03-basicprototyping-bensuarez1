@@ -31,7 +31,7 @@ public class FollowCam : MonoBehaviour
         }
         else {
             destination = POI.transform.position;
-            if (POI.tag == "Projectile") {
+            if (POI.tag == "Player") {
                 if (POI.GetComponent<Rigidbody>().IsSleeping()) {
                     POI = null;
                     return;
